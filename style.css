@@ -51,16 +51,25 @@ h1 {
   line-height: 1.05;
 }
 
-.heading-secondary {
-  font-size: 4.4rem;
-  line-height: 1.2;
-  margin-bottom: 9.6rem;
+.secondary-heading {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--ff-heading);
+  line-height: 8.4rem;
 }
 
-.heading-tertiary {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 3.2rem;
+.heading-description {
+  font-family: var(--ff-main);
+  font-size: 2.1rem;
+  line-height: 3.9rem;
+  letter-spacing: -0.66px;
+  color: var(--text-light);
+  margin: 2.4rem 0 5rem 0;
+}
+
+.tertiary-heading {
+  font-size: 2.8rem;
+  margin-bottom: 3.1rem;
 }
 
 .btn {
@@ -88,7 +97,9 @@ h1 {
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: var(--text-light);
+  background-color: transparent;
+  color: var(--text-white);
+  box-shadow: inset 0 0 0 3px var(--main-color);
 }
 
 .btn--outline,
@@ -159,7 +170,7 @@ h1 {
   align-items: center;
   justify-content: center;
   grid-template-columns: 2fr 1fr;
-  column-gap: 14rem;
+  column-gap: 14.8rem;
 }
 
 .hero-details {
@@ -167,15 +178,26 @@ h1 {
   padding-top: 3.7rem;
 }
 
-.hero-description {
-  /* font-family: var(--ff-main); */
-  font-size: 2.1rem;
-  line-height: 3.9rem;
-  letter-spacing: -0.66;
-  color: var(--text-light);
-  margin: 2.4rem 0 5rem 0;
-}
-
 .hero-img img {
   height: 62.8rem;
+}
+
+/***********************************/
+/* WHY    COMPONENTS */
+/***********************************/
+.why-section {
+  padding: 9.6rem 0;
+}
+
+.why-details {
+  display: grid;
+  align-items: start;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 7.5rem;
+  margin-bottom: 6.5rem;
+}
+
+.why-details p {
+  margin: 0;
 }
