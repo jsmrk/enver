@@ -201,3 +201,23 @@ h1 {
 .why-details p {
   margin: 0;
 }
+
+/***********************************/
+/* SERVICES    COMPONENTS */
+/***********************************/
+.service-section {
+  padding: 9.6rem 0;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 11rem;
+  column-gap: 12rem;
+  padding: 0 6.4rem;
+}
+
+.services-grid img {
+  margin-bottom: 2.8rem;
+}
