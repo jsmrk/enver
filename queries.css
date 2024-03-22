@@ -1,0 +1,43 @@
+:root {
+  --bg-color: #19191b;
+  --secondary-bg-color: #1c1c1e;
+  --main-color: #5454d4;
+
+  --text-white: #fff;
+  --text-light: #bababa;
+
+  --border-radius: 5px;
+
+  --ff-main: "Nunito Sans", sans-serif;
+  --ff-heading: "Graphik";
+  /* --ff-heading: ; */
+}
+
+@media (max-width: 75em) {
+  html {
+    /* 7px / 16 = 56.25% */
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 53em) {
+  .logo {
+    max-width: 80%;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.5rem;
+  }
+
+  .primary-heading {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  .heading-description {
+    font-size: 1.9rem;
+    line-height: 3.9rem;
+    letter-spacing: -0.66px;
+  }
+}
