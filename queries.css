@@ -170,8 +170,17 @@
     color: var(--text-white);
   }
 
+  .btn--outline,
+  .btn--outline:link,
+  .btn--outline:visited {
+    font-size: 3rem;
+    padding: 1rem 4rem;
+    background-color: var(--text-white);
+    color: var(--main-color);
+  }
+
   .hero-section {
-    padding: 3rem 0;
+    padding: 3rem 0 9.6rem 0;
   }
 
   .hero {
@@ -241,12 +250,13 @@
     row-gap: 3rem;
   }
 
+  .service-section h2 {
+    text-align: start;
+  }
+
   .services-grid {
-    display: grid;
     grid-template-columns: 1fr;
-    margin-top: 11rem;
-    column-gap: 12rem;
-    text-align: center;
+    margin-top: 8rem;
   }
 
   .services-grid img {
