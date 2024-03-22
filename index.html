@@ -20,6 +20,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
     <script defer src="app.js"></script>
 
     <title>Enver - A Digital Studio</title>
@@ -32,10 +33,12 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Home</a></li>
-          <li><a class="main-nav-link" href="#">Services</a></li>
-          <li><a class="main-nav-link" href="#">Our Project</a></li>
-          <li><a class="main-nav-link" href="#">About Us</a></li>
-          <button class="btn btn--outline">Contact us</button>
+          <li><a class="main-nav-link" href="#why">Why Us</a></li>
+          <li><a class="main-nav-link" href="#service">Services</a></li>
+          <li><a class="main-nav-link" href="#portfolio">Our Projects</a></li>
+          <button class="btn btn--outline">
+            <a href="#contact">Contact us</a>
+          </button>
         </ul>
       </nav>
 
@@ -46,7 +49,7 @@
     </header>
 
     <main>
-      <section class="hero-section">
+      <section id="#" class="hero-section">
         <div class="container">
           <div class="hero">
             <div class="hero-details">
@@ -87,7 +90,7 @@
         </div>
       </section>
 
-      <section class="why-section">
+      <section id="why" class="why-section">
         <div class="container">
           <div class="why-details">
             <h2 class="secondary-heading">Why Enver Is The Best Choice?</h2>
@@ -100,7 +103,7 @@
         </div>
       </section>
 
-      <section class="service-section">
+      <section id="service" class="service-section">
         <img class="service-bg-1" src="assets/service-bg-1.png" alt="" />
         <img class="service-bg-2" src="assets/service-bg-2.png" alt="" />
         <div class="container">
@@ -156,7 +159,7 @@
         </div>
       </section>
 
-      <section class="portfolio-section">
+      <section id="portfolio" class="portfolio-section">
         <div class="container">
           <h2 class="secondary-heading">Our Awesome Portfolio</h2>
           <div class="samples-portfolio">
@@ -168,7 +171,7 @@
         </div>
       </section>
 
-      <section class="contact-section">
+      <section id="contact" class="contact-section">
         <div class="container">
           <div class="contact-details">
             <h2 class="secondary-heading">
@@ -193,5 +196,7 @@
       </nav>
       <p class="heading-description">&copy; 2024 Enver, All Rights Reserved</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   </body>
 </html>

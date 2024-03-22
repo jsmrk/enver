@@ -162,6 +162,7 @@
     flex-direction: column;
     gap: 4.8rem;
     align-items: center;
+    position: absolute;
   }
 
   .main-nav-link:link,
