@@ -74,7 +74,6 @@ body {
 
 .btn {
   display: inline-block;
-
   border-radius: var(--border-radius);
   text-decoration: none;
   transition: all 0.5s;
@@ -92,6 +91,7 @@ body {
   display: flex;
   gap: 0.5rem;
   padding: 1.5rem 3rem;
+  align-items: center;
 }
 
 .btn--full:hover,
@@ -111,6 +111,7 @@ body {
   font-weight: 500;
   font-family: var(--font-main);
   padding: 1.5rem 4rem;
+  align-items: center;
 }
 
 .btn--outline:hover,
@@ -149,6 +150,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
+  gap: 3rem;
 }
 
 .logo {
@@ -179,6 +181,26 @@ body {
   color: var(--main-color);
   font-size: 18px;
   font-family: var(--ff-main);
+}
+
+/***********************************/
+/* MOBILE NAV SECTION */
+/***********************************/
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--text-white);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /***********************************/
@@ -215,7 +237,7 @@ body {
 
 .icon {
   position: absolute;
-  z-index: 999;
+  z-index: 995;
   max-width: 15%;
 }
 
@@ -295,7 +317,6 @@ body {
   top: -25rem;
   left: -30rem;
   z-index: 5;
-  border: 1px solid red;
 }
 
 .service-bg-2 {
@@ -314,23 +335,23 @@ body {
 
 .samples-portfolio {
   margin-top: 5rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
-  align-items: center;
-  justify-content: center;
   max-width: 100%;
 }
 
 .sample-img {
-  max-width: 31.5%;
+  justify-self: center;
+  max-width: 100%;
 }
 
 .samples-portfolio img:nth-child(2) {
-  padding-top: 5.8rem;
+  margin-top: 5.8rem;
 }
 
 .samples-portfolio img:nth-child(3) {
-  padding-top: 11.6rem;
+  margin-top: 11.6rem;
 }
 
 .dot {
@@ -342,7 +363,7 @@ body {
 }
 
 /***********************************/
-/* PORTFOLIO    COMPONENTS */
+/* CONTACT    COMPONENTS */
 /***********************************/
 .contact-section {
   padding: 9.6rem 0;
@@ -354,13 +375,14 @@ body {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   padding: 10.4rem 0;
+  column-gap: 5rem;
 }
 
 .contact-btn-box {
   justify-self: end;
 }
 
-.contact-btn-box .btn {
+.contact-btn-box .btn--outline {
   padding: 2rem 5rem;
 }
 
@@ -369,19 +391,21 @@ body {
 /***********************************/
 .footer-section {
   padding: 5rem 3.2rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
   justify-content: space-between;
 }
 
-.footer-section img {
-  display: block;
+.footer-logo {
+  max-width: 100%;
 }
 
 .footer-nav-list {
   display: flex;
   list-style: none;
   column-gap: 5rem;
+  justify-content: center;
 }
 
 .footer-nav-link:link,
@@ -390,7 +414,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: var(--text-light);
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: var(--ff-main);
   transition: all 0.5s;
 }
@@ -400,7 +424,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: var(--main-color);
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: var(--ff-main);
 }
 
